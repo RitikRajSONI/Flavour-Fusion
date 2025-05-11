@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flavour Fusion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Fjord+One&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Marcellus+SC&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
+    rel="stylesheet">
+  <style>
+    .recipes {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 80px;
+    }
+
+    .recipe-card {
+      flex: 1;
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .recipe-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #31d18f;
+    }
+
+    .recipe-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .categories-section {
+      margin-top: 50px;
+    }
+
+    .categories-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .categories-header h2 {
+      font-size: 2rem;
+      position: relative;
+    }
+
+    .categories-header h2::after {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 5px;
+      background-color: black;
+      left: 0;
+      bottom: -8px;
+    }
+
+    .categories-header p {
+      max-width: 600px;
+    }
+
+    .categories {
+      display: flex;
+      gap: 20px;
+    }
+
+    .category-card {
+      flex: 1;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .category-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .category-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .category-card p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      padding: 0 10px;
+    }
+
+    .category-card .learn-more {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+
+      .recipes,
+      .categories {
+        flex-direction: column;
+      }
+
+      .header .browse-button {
+        float: none;
+        display: block;
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" style="text-decoration: none;">
+      <div class="logo-container">
+        <img src="https://t4.ftcdn.net/jpg/04/44/44/65/360_F_444446530_uLQmBRrjwIiuwtC9fBygW11y062G4Xzm.jpg"
+          alt="Company Logo" class="logo">
+        <h1 class="site-title">Flavour Fusion</h1>
+      </div>
+    </a>
+    <div id="mid">
+      <h2>Explore the World's Finest Flavours</h2>
+
+    </div>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="global.html">Global Cuisine</a>
+      <a href="contact.html">Contact Us</a>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <div class="header">
+        <h1>Discover Delicious Recipes</h1>
+        <p>Find your next favorite dish with ease.</p>
+      </div>
+      <a href="#" class="btn" style="margin-left: 65vw;">Browse Categories</a>
+      <br><br>
+
+      <div class="recipes">
+        <div class="recipe-card">
+          <a href="itlncury.html" style="text-decoration:none;color:black;">
+            <img src="https://aisite.10web.io/100/wp-content/uploads/sites/202/2025/04/tenweb_media_rhv6wgqyn.webp"
+              alt="Italian Pasta">
+            <h3>Italian Cuisine</h3>
+            <h2>A Beginner’s Guide to Italian Pasta Dishes</h2>
+          </a>
+          <p>Learn the fundamental techniques and ingredients for creating delicious Italian pasta dishes.</p>
+        </div>
+
+        <div class="recipe-card">
+          <a href="japcury.html" style="text-decoration:none;color:black;">
+            <img src="https://aisite.10web.io/100/wp-content/uploads/sites/202/2025/04/tenweb_media_rqumpn9ql.webp"
+              alt="Japanese Sushi">
+            <h3>Asian Cuisine</h3>
+            <h2>Japanese Sushi: A Culinary Journey</h2>
+          </a>
+          <p>Explore the art and tradition of Japanese sushi, from nigiri to maki.</p>
+        </div>
+
+        <div class="recipe-card">
+          <a href="indcury.html" style="text-decoration:none;color:black;">
+            <img src="https://aisite.10web.io/100/wp-content/uploads/sites/202/2025/04/tenweb_media_rnvrdey5w.webp"
+              alt="Indian Curry">
+            <h3>Indian Cuisine</h3>
+            <h2>The Secrets of Indian Curry</h2>
+          </a>
+          <p>Uncover the diverse world of Indian curries, from mild to fiery.</p>
+        </div>
+      </div>
+
+      <div class="categories-section">
+        <div class="categories-header">
+          <h2>Explore Our Diverse Recipe Categories</h2>
+          <p>Delve into a world of flavors with our curated recipe categories. Whether you’re craving the zest of
+            Italian cuisine, the spice of Indian dishes, or the delicate art of Japanese cooking, FlavorFusion has
+            something to satisfy every palate. Browse our categories and embark on a culinary adventure today!</p>
+        </div>
+
+        <div class="categories">
+          <div class="category-card">
+            <img src="https://aisite.10web.io/100/wp-content/uploads/sites/202/2025/04/tenweb_media_sda7msu1t.webp"
+              alt="Italian Cuisine">
+            <h3 style="color: #31d18f;">Moroccan Cuisine</h3>
+            <p>Experience the exotic flavors of Morocco with our collection of authentic recipes. From tagines to
+              couscous, discover the secrets of Moroccan cooking.</p>
+            <a href="morcury.html" class="btn">Learn More</a>
+          </div>
+
+          <div class="category-card">
+
+            <img src="https://aisite.10web.io/100/wp-content/uploads/sites/202/2025/04/tenweb_media_szs1pf8w3.webp"
+              alt="Japanese Cuisine">
+            <h3 style="color: #31d18f;">Italian Cuisine</h3>
+            <p>Indulge in the classic flavors of Italy with our selection of pasta dishes, pizzas, and risottos. Learn
+              the art of Italian cooking and impress your family and friends.</p>
+            <a href="itlncury.html" class="btn">Learn More</a>
+          </div>
+
+          <div class="category-card">
+
+            <img src="https://aisite.10web.io/100/wp-content/uploads/sites/202/2025/04/tenweb_media_sv1tep8yu.webp"
+              alt="Moroccan Cuisine">
+            <h3 style="color: #31d18f;">Japanese Cuisine</h3>
+            <p>Master the art of Japanese cooking with our collection of sushi, ramen, and tempura recipes. Discover the
+              delicate flavors and techniques of Japanese cuisine.</p>
+            <a href="jcus.html" class="btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <span>Email: Flavfuse@gmail.com</span>
+        <span>Phone: (123) 456-7890</span>
+      </div>
+      <p class="quote">The best way to predict the future is to create it.</p>
+      <p>Copyright © 2025 Flavor Fusion. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
